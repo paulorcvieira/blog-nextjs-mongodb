@@ -1,0 +1,55 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+body {
+  background-color: #e1e1e6;
+  color: #131319;
+}
+
+h1 {
+  color: #fd951f;
+}
+
+h3 {
+  color: #8257e6;
+}
+
+.dark-mode {
+  background-color: #e1e1e6;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #141316;
+    color: #f0ece2;
+  }
+
+  h1 {
+    color: #8257e6;
+  }
+
+  h3 {
+    color: #04d361;
+  }
+
+  img {
+    filter: brightness(0.9);
+  }
+
+  .dark-mode {
+    background-color: #202024;
+  }
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
